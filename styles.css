@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+}
+
+.left-section {
+  flex: 1;
+  background: url('assets/background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.left-section .logo-container {
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section .logo-container img {
+  width: 100px; /* Adjust size as needed */
+}
+
+.left-section .logo-container h1 {
+  font-family: "Jaro", sans-serif;
+  color: white;
+  font-size: 50px; /* Adjust size as needed */
+  margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.left-section p {
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #5d904a;
+  box-shadow: 0 0 5px rgba(93, 144, 74, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #5d904a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #4b7a3c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #5d904a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
